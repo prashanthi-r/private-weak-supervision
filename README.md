@@ -1,6 +1,4 @@
-<h1 style="text-align:center">
-<img style="vertical-align:middle" width="500" height="180" src="./images/wrench_logo.png" />
-</h1>
+# Install WRENCH and add only the wrench/wrench directory in the root directory here to run ws_snork successfully
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python3-1f425f.svg?color=purple)](https://www.python.org/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/JieyuZ2/wrench/commits/main)
