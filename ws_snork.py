@@ -5,7 +5,9 @@ from wrench.dataset import load_dataset
 from wrench._logging import LoggingHandler
 from wrench.endmodel import MLPModel
 from wrench.labelmodel import MajorityVoting
-from privacy.research.pate_2017 import analysis
+from privacy.research.pate_2017 import analysis # install tensorflow's privacy repository in the root to import this without error
+# i have uploaded just the pate_2017 files to our root directory with the change we made for the project
+# because the privacy repository is too huge.
 from privacy.research.pate_2017 import aggregation
 from wrench.dataset.utils import check_weak_labels
 from snorkel.utils import probs_to_preds
