@@ -1,0 +1,64 @@
+dulcimer /ifs/CS/replicated/home/pramach3/reprod_papernot/privacy/research/pate_2017 $ python analysis.py --counts_file=l_weak_label.npy --max_examples=100 --num_classes=2
+2022-12-20 15:37:25.133980: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-12-20 15:37:25.146775: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-12-20 15:37:25.147224: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2
+[[0 1]
+ [1 2]
+ [0 0]
+ ...
+ [1 3]
+ [1 2]
+ [0 3]]
+Epsilons (Noisy Max): [15.51292546 11.75646273 11.83764182 12.87823137 14.30258509 15.91882091
+ 17.64470364 19.43911568]
+Smoothed sensitivities (Noisy Max): [0. 0. 0. 0. 0. 0. 0. 0.]
+To get an 2.072326583694641-DP estimate of epsilon,
+..add noise ~ 0.9650988486738931
+... times [0. 0. 0. 0. 0. 0. 0. 0.]
+Epsilon = 11.756462732485105.
+Data independent bound = 11.756462732485115.
+
+(wrench) dulcimer /ifs/CS/replicated/home/pramach3/reprod_papernot/privacy/research/pate_2017 $ python analysis.py --counts_file=l_weak_label.npy --max_examples=500 --num_classes=2
+2022-12-20 15:37:39.429072: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-12-20 15:37:39.439925: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-12-20 15:37:39.440442: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2
+[[0 1]
+ [1 2]
+ [0 0]
+ ...
+ [1 3]
+ [1 2]
+ [0 3]]
+Epsilons (Noisy Max): [31.51292546 35.75646273 43.83764182 52.87823137 62.30258509 71.91882091
+ 81.64470364 91.43576333]
+Smoothed sensitivities (Noisy Max): [0. 0. 0. 0. 0. 0. 0. 0.]
+To get an 2.072326583694641-DP estimate of epsilon,
+..add noise ~ 0.9650988486738931
+... times [0. 0. 0. 0. 0. 0. 0. 0.]
+Epsilon = 31.51292546496998.
+Data independent bound = 31.51292546497023.
+
+(wrench) dulcimer /ifs/CS/replicated/home/pramach3/reprod_papernot/privacy/research/pate_2017 $ python analysis.py --counts_file=l_weak_label.npy --max_examples=1000 --num_classes=2
+2022-12-20 15:37:59.527059: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-12-20 15:37:59.538498: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-12-20 15:37:59.538963: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2
+[[0 1]
+ [1 2]
+ [0 0]
+ ...
+ [1 3]
+ [1 2]
+ [0 3]]
+Epsilons (Noisy Max): [ 51.51292546  65.75646273  83.83764182 102.87823137 122.30258509
+ 141.91882091 161.64470364 181.43073481]
+Smoothed sensitivities (Noisy Max): [0.         0.         0.         0.         0.         0.
+ 0.         0.00167618]
+To get an 2.072326583694641-DP estimate of epsilon,
+..add noise ~ 0.9650988486738931
+... times [0.         0.         0.         0.         0.         0.
+ 0.         0.00167618]
+Epsilon = 51.512925464969555.
+Data independent bound = 51.51292546497024.
